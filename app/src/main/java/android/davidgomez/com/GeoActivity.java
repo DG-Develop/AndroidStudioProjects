@@ -10,7 +10,7 @@ import android.widget.Toast;
 import com.davidgomez.android.model.BancoDePreguntas;
 import com.davidgomez.android.model.Pregunta;
 
-public class MainActivity extends AppCompatActivity {
+public class GeoActivity extends AppCompatActivity {
 
     private TextView mTextoPregunta;
     private Button mBotonCierto;
@@ -79,13 +79,13 @@ public class MainActivity extends AppCompatActivity {
     private void verificarRespuesta(boolean botonOprimido) {
         boolean respuesta = mPreguntaActual.isRespuestaVerdadera();
         if (botonOprimido == respuesta) {
-            Toast.makeText(MainActivity.this,
+            Toast.makeText(GeoActivity.this,
                     R.string.texto_respuesta_correcta,
                     Toast.LENGTH_SHORT)
                     .show();
         }
         else {
-            Toast.makeText(MainActivity.this,
+            Toast.makeText(GeoActivity.this,
                     R.string.texto_respuesta_incorrecta,
                     Toast.LENGTH_SHORT)
                     .show();

@@ -31,7 +31,12 @@ public class BancoDePreguntas {
             return null;
         }
         else {
+
             mPosicionActual++;
+
+            if(mPosicionActual == size()){
+                mPosicionActual = 0;
+            }
         }
         return mBanco.get(mPosicionActual);
     }
